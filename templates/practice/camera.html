@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Practice</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'css/camera.css' %}">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts.googleapis.com/css?family=Open+Sans" />
+</head>
+
+<body>
+    <div id="includeHeader"></div>
+    <div class="container">
+        <div class="posediv">
+            <div class="card">
+                <div class="ribbon">
+                    <div class="ribbon-text">{{ pose }}</div>
+                </div>
+                <!-- BRIDGE -->
+                <!-- <img src="https://i.pinimg.com/originals/04/73/c8/0473c893b4d41d95db79b7860771ff43.gif"> -->
+                <!-- TREE -->
+                <img src="https://media.giphy.com/media/zk54CNHz7A9DW/giphy.gif">
+                <div class="card-info">
+                    <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nobis nam quaerat soluta ipsam repudiandae cumque. Impedit quisquam quidem laboriosam, quam sunt architecto numquam placeat iusto, obcaecati, vel fugit blanditiis?</p> -->
+                    <!-- <p class="card-text"> Sanskrit: Vrksasana<br>Pose type: Standing posture<br>Targets: Lower body</p> -->
+                    <a href="#">Know More</a>
+                </div>
+            </div>
+
+            <div class="camDiv" id="camDiv" style="width: 600px; height: 500px; border: 2px solid black; position: relative;">
+                <!-- <img id="camurl" style="width: 100%; height: 100%;" src=''> -->
+                <!-- <video id="camurl" style="width: 100%; height: 100%;"></video> -->
+            </div>
+        </div>
+        <div class="msgdiv" style="text-align: center; bottom: 0rem;">
+            <h1 id="camtext">.</h1>
+            <button class="msgbtn" id="startBtn" onclick="start()">Start</button>
+            <a href="/closePractice" id="stopBtn" style="display: none;" class="msgbtn">Stop</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{% static 'js/practice2.js' %}"></script>
+    <script>
+        $('#includeHeader').load('/header')
+
+        // let xmlhttp = new XMLHttpRequest();
+
+        // function reqListener() {
+        //     console.log('our js register');
+        // }
+
+        // function updateProgress(oEvent) {
+        //     // console.log('inside progress');
+        //     // console.log(oEvent);
+        //     console.log(oEvent)
+        //     console.log(oEvent.target.responseText)
+        //     x = oEvent.target.responseText.split("...")
+        //     console.log(x)
+        //     console.log("****************************")
+        //     document.getElementById('camtext').innerText = x[x.length - 2]
+        // }
+
+        // function start() {
+        //     // test = '{% url "video_feed" "prac" %}'
+        //     // console.log(test)
+        //     // $('#camurl').attr('src', '{% url "video_feed" "prac" %}')
+        //     $('#stopBtn').css('display', 'block')
+        //     $('#startBtn').css('display', 'none')
+        //     url = '{% url "msg_feed" "prac" %}';
+        //     xmlhttp.addEventListener('load', reqListener);
+        //     xmlhttp.addEventListener('progress', updateProgress, false);
+        //     xmlhttp.open("get", url, true);
+        //     xmlhttp.send();
+        // }
+    </script>
+</body>
+
+</html>

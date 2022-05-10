@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Upcoming Page</title>
+    {% load static %}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            height: 100vh;
+            display: flex;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("{%static 'images/yoga.webp'%}");
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .heading {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+        
+        .backBtn {
+            text-decoration: none;
+            color: white;
+            background: #134611;
+            outline: none;
+            display: block;
+            margin: 0 auto 16px auto;
+            width: fit-content;
+            text-align: center;
+            border: thin solid black;
+            padding: 5px 12px;
+            border-radius: 4px;
+            transition: background-color 300ms ease, color 300ms ease;
+        }
+        
+        .backBtn:hover,
+        .backBtn:focus {
+            background-color: white;
+            color: #134611;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="includeHeader"></div>
+    <div class="container">
+        <div class="heading">
+            <h1>Coming Soon Page</h1>
+            <br>
+            <p>Get Ready! Something really cool is coming up.</p>
+            <br>
+            <a class="backBtn" href="/">Go Back</a>
+        </div>
+    </div>
+
+    <script>
+        $('#includeHeader').load('/header')
+    </script>
+</body>
+
+
+</html>

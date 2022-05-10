@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Quiz</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'css/survey_quiz.css'%}">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div id="includeHeader"></div>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Let's know you a little bit more</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Instructions</span></div>
+        <div class="info-list">
+            <div class="info">1. This is one time survey to be filled by you.</div>
+            <div class="info">2. You can choose an option only once.</div>
+            <div class="info">3. Choose the option that fits you best.</div>
+            <div class="info">4. You can't exit from the survey while giving it.</div>
+            <div class="info">5. Answer these questions honestly to make yoga session more personalized for you.</div>
+        </div>
+        <div class="buttons">
+            <a href="/" class="quit">Home</a>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Yoga Survey</div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que"></div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Survey! Let's start with your journey.</div>
+        <div class="buttons">
+            <a href="/" class="quit">Home</a>
+        </div>
+    </div>
+
+    <script src="{%static 'js/questions.js'%}"></script>
+
+    <script src="{%static 'js/que_script.js'%}"></script>
+
+    <script>
+        $('#includeHeader').load('/header')
+    </script>
+
+</body>
+
+</html>

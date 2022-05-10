@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yog Guru</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'css/index.css' %}">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts.googleapis.com/css?family=Open+Sans" />
+</head>
+
+<body>
+
+    <div id="includeHeader"></div>
+    <section class="home">
+        <video class="video-slide active" src="{%static 'images/yoga.webm' %}" autoplay muted loop></video>
+        <video class="video-slide" src="{%static 'images/friends_yoga.webm' %}" autoplay muted loop></video>
+        <video class="video-slide" src="{%static 'images/kids_yoga.webm' %}" autoplay muted loop></video>
+        <!-- <img src="images/yoga.jpeg" class="video-slide active" alt="">
+        <img src="images/friends_yoga.jpeg" class="video-slide" alt="">
+        <img src="images/kids_yoga.jpeg" class="video-slide" alt=""> -->
+
+        <div class="content active">
+            <h1>Wonderful<br><span>Yoga Sessions</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="/notFound">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Enjoy<br><span>Yoga with friends</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Adventures <br><span>of Kid's Yoga</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="/notFound">Read More</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <section class="personlized_yoga">
+        <div class="title reveal">
+            <h2 class="section-title">Personalized Yogasana</h2>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="ribbon">
+                    <div class="ribbon-text">Seated Forward Bend</div>
+                </div>
+                <img src="{%static 'images/seated_pose.webp' %}" alt="img">
+                <div class="card-info">
+                    <p class="card-text">Sanskrit: Paschimottanasana<br>Pose type: Forward bend<br>Targets: Lower body</p>
+                    <a href="/practice/seated_forward_bend">Start</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="ribbon">
+                    <div class="ribbon-text">Tree Pose</div>
+                </div>
+                <img src="{%static 'images/tree_pose.webp' %}" alt="img">
+                <div class="card-info">
+                    <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nobis nam quaerat soluta ipsam repudiandae cumque. Impedit quisquam quidem laboriosam, quam sunt architecto numquam placeat iusto, obcaecati, vel fugit blanditiis?</p> -->
+                    <p class="card-text"> Sanskrit: Vrksasana<br>Pose type: Standing posture<br>Targets: Lower body</p>
+                    <a href="/practice/tree_pose">Start</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="ribbon">
+                    <div class="ribbon-text">Dolphin Plank</div>
+                </div>
+                <img src="{%static 'images/plank_pose.webp' %}" alt="img">
+                <div class="card-info">
+                    <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nobis nam quaerat soluta ipsam repudiandae cumque. Impedit quisquam quidem laboriosam, quam sunt architecto numquam placeat iusto, obcaecati, vel fugit blanditiis?</p> -->
+                    <p class="card-text">Sanskrit: <br>Pose Type: Arm Balance<br>Targets: Core</p>
+
+                    <a href="/practice/dolphin_plank">Start</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="ribbon">
+                    <div class="ribbon-text">Warrior II basics</div>
+                </div>
+                <img src="{%static 'images/warrior_pose.webp' %}" alt="img">
+                <div class="card-info">
+                    <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nobis nam quaerat soluta ipsam repudiandae cumque. Impedit quisquam quidem laboriosam, quam sunt architecto numquam placeat iusto, obcaecati, vel fugit blanditiis?</p> -->
+                    <p class="card-text">Sanskrit: Virabhadrasana II<br>Pose type: Standing posture<br>Targets: Hips</p>
+                    <a href="/practice/warrior_pose">Start</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="ribbon">
+                    <div class="ribbon-text">Child’s Pose</div>
+                </div>
+                <img src="{%static 'images/child_pose.webp' %}" alt="img">
+                <div class="card-info">
+                    <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nobis nam quaerat soluta ipsam repudiandae cumque. Impedit quisquam quidem laboriosam, quam sunt architecto numquam placeat iusto, obcaecati, vel fugit blanditiis?</p> -->
+                    <p class="card-text">
+                        Sanskrit: Balasana<br>Pose type: Forward Fold<br>Target area: Full Body
+                    </p>
+                    <a href="/practice/child_pose">Start</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="ribbon">
+                    <div class="ribbon-text">Downward Dog Pose</div>
+                </div>
+                <img src="{%static 'images/downward_dog_pose.webp' %}" alt="img">
+                <div class="card-info">
+                    <!-- <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat nobis nam quaerat soluta ipsam repudiandae cumque. Impedit quisquam quidem laboriosam, quam sunt architecto numquam placeat iusto, obcaecati, vel fugit blanditiis?</p> -->
+                    <p class="card-text">
+                        Sanskrit: Adho Mukha Svanasana<br>Pose Type: Inversion<br>Target Area: Lower Body
+                    </p>
+                    <a href="/practice/downward_dog_pose">Start</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" services" id="services">
+        <div class="title reveal">
+            <h2 class="section-title">Face & Mind Therapy</h2>
+        </div>
+        <div class="content">
+            <div class="card reveal">
+                <div class="service-icon">
+                    <img src="{%static 'images/faceyoga.png' %}" alt="img">
+                </div>
+                <div class="info">
+                    <h3>Face Yoga</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button id="myBtn" class="modalBtn">Explore</button>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="service-icon">
+                    <img src="{%static 'images/mudras.png' %}" alt="img">
+                </div>
+                <div class="info">
+                    <h3>Mudras</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button id="myBtn" class="modalBtn">Explore</button>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="service-icon">
+                    <img src="{%static 'images/meditation.png' %}" alt="img">
+                </div>
+                <div class="info">
+                    <h3>Meditation</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <button id="myBtn" class="modalBtn">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="content">
+            <div class="left box">
+                <div class="upper">
+                    <div class="topic">About us</div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, repellendus.</p>
+                </div>
+                <div class="lower">
+                    <div class="topic">Contact us</div>
+                    <div class="phone">
+                        <a href="#"><i class="fas fa-phone-volume"></i>+91-7065347234</a>
+                    </div>
+                    <div class="email">
+                        <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle box">
+                <div class="topic">Our Services</div>
+                <div><a href="#">Yoga Session </a></div>
+                <div><a href="#">Play with Friends</a></div>
+                <div><a href="#">Meditation</a></div>
+                <div><a href="#">Diets</a></div>
+                <div><a href="#">Yoga for Kids</a></div>
+                <div><a href="#">Face & Mind Therapy</a></div>
+            </div>
+            <div class="right box">
+                <div class="topic">Subscribe us</div>
+                <form action="#">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" name="" value="Send">
+                    <div class="media-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="bottom">
+          <p>Copyright © 2020 <a href="#">KV Innovators</a> All rights reserved</p>
+        </div> -->
+    </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="work" id="work">
+                <div class="content">
+                    <div class="card reveal">
+                        <div class="card-img">
+                            <img src="{%static 'images/meditation/med_1.jpeg'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="card reveal">
+                        <div class="card-img">
+                            <img src="{%static 'images/meditation/med_2.jpeg'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="card reveal">
+                        <div class="card-img">
+                            <img src="{%static 'images/meditation/med_3.jpeg'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="card reveal">
+                        <div class="card-img">
+                            <img src="{%static 'images/meditation/med_4.jpeg'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="card reveal">
+                        <div class="card-img">
+                            <img src="{%static 'images/meditation/med_5.jpeg'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="card reveal">
+                        <div class="card-img">
+                            <img src="{%static 'images/meditation/med_6.webp'%}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{%static 'js/home_script.js'%}" charset="utf-8"></script>
+    <script>
+        $('#includeHeader').load('/header')
+    </script>
+</body>
+
+
+</html>

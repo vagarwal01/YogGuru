@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'css/header.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="/" class="brand">Yog Guru</a>
+        <div class="menu-btn">
+            <img src="{%static 'images/menu.png' %}" class="openBtn" alt="">
+            <img src="{%static 'images/close.png' %}" class="closeBtn" alt="">
+        </div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="/notFound"><span class="material-icons">self_improvement</span> Yogasana</a>
+                <a href="/game"><span class="material-icons">sports_esports</span> Play with Friends</a>
+                <a href="/notFound"><span class="material-icons">spa</span> Meditation</a>
+                <a href="/notFound"><span class="material-icons">menu_book</span> Diets</a>
+                <a href="/notFound"><span class="material-icons">child_care</span> Yoga for Kids</a>
+                <!-- <button type="button" href="survey_quiz.html" class="login-with-google-btn">Sign in with Google</button> -->
+                <a type="button" href="/profile" class="login-with-google-btn" style="color: white;">Sign in with Google</a>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        //javascript for navigation bar effects on scroll
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        const navigationItems = document.querySelectorAll(".navigation a")
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        navigationItems.forEach((navigationItem) => {
+            navigationItem.addEventListener("click", () => {
+                menuBtn.classList.remove("active");
+                navigation.classList.remove("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
