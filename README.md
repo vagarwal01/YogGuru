@@ -1,2 +1,10 @@
 # YogGuru
-Simplifying Home Yoga Practices using MediaPipe and Video Streaming
+### Simplifying Home Yoga Practices using MediaPipe and Video Streaming
+
+Today is the era of a digital world. The need for another person to be present around for a simple task is getting slim to none. Computer Vision and Machine Learning are the basis of this modern era. With cutting-edge technologies in computer vision, we can detect, monitor, and even control the results as we desire. One of the crucial parts of computer vision is the human body pose estimation. Pose estimation techniques can be further extended to grade or compare human poses. They are ruling in every other industry, so why not in Yoga Industry. Yoga is not a new practice. It has been in existence since ancient times. Yoga is something that adds years to your life and automatically life to your years. The integration of AI in the fitness industry (AI enabled fitness trainers, smart wearables, AI based gym equipment to name a few) is gaining huge momentum among the health conscious.
+
+The project explores around how the yoga practices can be simplified. It is a real-time, one-to-one experience for all the yoga enthusiasts to enjoy doing yoga in their homes with a virtual trainer and compete with their friends over a game of yoga.
+
+There are two most important features in the system, viz. practice sessions and multiplayer game. Yoga practice sessions provides a platform for the yoga enthusiasts to practice the yoga pose with a real-time one to one interactive system with a virtual trainer which not only checks but also guide users while doing yoga. Multiplayer game helps the yoga enthusiasts to stay motivated for doing yoga and creates a fun moment between the friends since it brings out a real-life experience for the people as if they are all doing yoga together in a real physical room. Furthermore, a new way of pose grading model is also mentioned in the paper. The model is prepared in such a way that can be used for every person with different body proportions. It proved to provide accurate results to the users.
+
+Therefore, overall, it brings out a unique & useful application for all the yoga enthusiasts which don't just give out the information or session but motivates and guides user during yoga and also brings some excitement to yoga through our gaming feature and rewards.
